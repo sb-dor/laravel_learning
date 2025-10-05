@@ -107,7 +107,7 @@ class FirebaseMessagingController extends Controller
                     'aps' => [
                         'alert' => [
                             'title' => $validated['title'],
-                            'body' => $validated['body'] ?? null,
+                            'body' => $validated['body'] ?? '',
                         ],
                         'mutable-content' => 1,
                         'sound' => 'default',
