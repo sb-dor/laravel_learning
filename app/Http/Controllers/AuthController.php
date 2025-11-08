@@ -176,6 +176,7 @@ class AuthController extends Controller
 
     public function simple_json()
     {
+        User::get();
         return response()->json([
             'status' => 'ok',
             'message' => 'Simple JSON response',
