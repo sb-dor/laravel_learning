@@ -164,3 +164,5 @@ Route::get('/collect-several-array-of-collections', [
 ]);
 
 Route::get('/send/test/message', [LaravelSanctumLearningController::class, 'sendMessage']);
+
+Route::get('/simple-json', [AuthController::class, 'simple_json']);

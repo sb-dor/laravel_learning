@@ -173,4 +173,13 @@ class AuthController extends Controller
         throw 1;
         return response()->file(storage_path('/app/videos/bee.mp4'));
     }
+
+    public function simple_json()
+    {
+        return response()->json([
+            'status' => 'ok',
+            'message' => 'Simple JSON response',
+            'timestamp' => now(),
+        ]);
+    }
 }
